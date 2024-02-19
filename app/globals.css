@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0; /* Text color in dark mode (black) */
+  --background-start-rgb: 255, 255, 255; /* Background gradient start in dark mode (white) */
+  --background-end-rgb: 255, 255, 255; /* Background gradient end in dark mode (white) */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255; /* Text color in light mode (white) */
+    --background-start-rgb: 255, 255, 255; /* Background gradient start in light mode (white) */
+    --background-end-rgb: 255, 255, 255; /* Background gradient end in light mode (white) */
+  }
+}
+
+body {
+  color: #000; /* Set text color to black */
+  background: #fff; /* Set background color to white */
+}
